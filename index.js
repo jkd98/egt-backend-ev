@@ -29,7 +29,7 @@ const corsOptions = {
     }
 };
 
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
 
 app.use('/jugador',jugadorRoutes); // para rutas del jugador
 app.use('/juego',resultadoRoutes); // para rutas del resultado

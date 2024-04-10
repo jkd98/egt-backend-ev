@@ -10,7 +10,7 @@ import Resultado from "../models/Resultado.js";
 const nuevoResultado = async(req, res)=>{
     try{
         const nwResultado = new Resultado(req.body);
-        const sved = nwResultado.save();
+        const sved =  await nwResultado.save();
         console.log("Encuentro Registro exitso");
         return res.json({msg:"Registro exitoso"});
     }catch(error){
